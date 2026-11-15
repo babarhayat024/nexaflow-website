@@ -87,7 +87,7 @@
       <a class="nav-link" href="#how">How we work</a>
       <a class="nav-link" href="about.html">About</a>
       <a class="nav-link" href="#questions">FAQ</a>
-      <a class="btn btn-small" href="mailto:info@nexaflow.pk">Email us</a>
+      <a class="btn btn-small" href="mailto:info@nexaflow.pk" data-contact>Email us</a>
     </nav>
   </div>
 </header>
@@ -101,7 +101,7 @@
       <h1>Your stock, sales and accounts in <span>one system.</span></h1>
       <p class="lead">We set up ERP and accounting, and we build mobile apps and websites for shops, distributors and factories. You stop chasing registers and Excel sheets, and you see your business on one screen.</p>
       <div class="hero-actions">
-        <a class="btn" href="mailto:info@nexaflow.pk">Email us</a>
+        <a class="btn" href="mailto:info@nexaflow.pk" data-contact>Email us</a>
         <a class="btn btn-outline" href="#services">See what we do</a>
       </div>
     </div>
@@ -308,7 +308,7 @@
       <p>Send one message. We will reply with honest advice on what you need and what you do not need.</p>
     </div>
     <div class="contact-actions">
-      <a class="btn btn-white" href="mailto:info@nexaflow.pk">Email: info@nexaflow.pk</a>
+      <a class="btn btn-white" href="mailto:info@nexaflow.pk" data-contact>Email: info@nexaflow.pk</a>
       <a class="btn btn-ghost" href="https://www.linkedin.com/company/nexaflowpk" rel="noopener">Follow us on LinkedIn</a>
     </div>
   </div>
@@ -334,6 +334,29 @@
     <p class="copyright">© 2026 NexaFlow, Pakistan · nexaflow.pk</p>
   </div>
 </footer>
+
+
+<dialog id="contact-dialog" class="contact-dialog" aria-labelledby="contact-title">
+  <form id="contact-form" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+    <button type="button" class="dialog-close" id="contact-close" aria-label="Close">&times;</button>
+    <h2 id="contact-title">Send us a message</h2>
+    <p class="dialog-lead">Tell us about your business. We reply by email, usually within one working day.</p>
+    <input type="hidden" name="access_key" value="f734cbc9-495e-4040-93d0-57282e658a32">
+    <input type="hidden" name="subject" value="New enquiry from nexaflow.pk">
+    <input type="hidden" name="from_name" value="NexaFlow website">
+    <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label for="cf-name">Your name</label>
+    <input id="cf-name" type="text" name="name" required autocomplete="name">
+    <label for="cf-email">Your email</label>
+    <input id="cf-email" type="email" name="email" required autocomplete="email">
+    <label for="cf-phone">Phone or WhatsApp <span>(optional)</span></label>
+    <input id="cf-phone" type="tel" name="phone" autocomplete="tel">
+    <label for="cf-message">Your message</label>
+    <textarea id="cf-message" name="message" rows="5" required></textarea>
+    <button type="submit" class="btn" id="cf-send">Send message</button>
+    <p class="dialog-note" id="cf-status" role="status" aria-live="polite">We use your details only to reply to your message. You can also write to <strong>info@nexaflow.pk</strong>.</p>
+  </form>
+</dialog>
 
 <script src="script.js" defer></script>
 </body>
