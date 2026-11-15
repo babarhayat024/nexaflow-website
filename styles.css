@@ -367,3 +367,9 @@ h3 { font-weight: 800; letter-spacing: -0.015em; line-height: 1.2; }
 .dialog-note.err { color: #B42318; font-weight: 700; }
 .dialog-close { position: absolute; top: 10px; right: 12px; width: 40px; height: 40px; font-size: 30px; line-height: 1; background: none; border: 0; color: var(--ink); cursor: pointer; }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+
+/* Legal page */
+.legal { max-width: 760px; }
+.legal h2 { font-size: 24px; margin: 32px 0 8px; color: var(--ink); }
+.legal p, .legal li { font-size: 17px; }
+.legal ul { padding-left: 22px; }
